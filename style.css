@@ -1,0 +1,98 @@
+:root {
+    --font-sans: 'Segoe UI', sans-serif;
+    --max-width: 720px;
+    --primary: #111;
+    --secondary: #555;
+    --bg: #ffefe4;
+    --accent: #0070f3;
+    --nav-bg: #f0f0f0;
+    --nav-hover: #ddd;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--primary);
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    margin-bottom: -20px;
+  }
+  
+  header {
+    background: var(--bg);
+    border-bottom: 1px solid #000000;
+    text-align: left;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    color: var(--secondary);
+  }
+  
+  .nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .nav-tabs button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: var(--primary);
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  .nav-tabs button:hover {
+    background-color: #fcdecd;
+    transform: translateY(-1px);
+  }
+  
+  main h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 0.5rem;
+  }
+  
+  .day-content {
+    display: none;
+  }
+  
+  .day-content.active {
+    display: block;
+  }
+  
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    padding-left: 1.2rem;
+  }
+  
