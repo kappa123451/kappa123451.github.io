@@ -2,8 +2,8 @@
     --font-sans: 'Segoe UI', sans-serif;
     --max-width: 720px;
     --primary: #111;
-    --secondary: #555;
-    --bg: #ffefe4;
+    --secondary: #494949;
+    --bg: #fdf6f1;
     --accent: #0070f3;
     --nav-bg: #f0f0f0;
     --nav-hover: #ddd;
@@ -25,12 +25,23 @@
     margin-bottom: -20px;
   }
   
+  .picture {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
   header {
     background: var(--bg);
     border-bottom: 1px solid #000000;
     text-align: left;
   }
   
+  header h1:hover{
+  transform: scale(1.03);
+  cursor: pointer;
+  }
+
   header h1 {
     margin: 0;
     font-size: 2rem;
@@ -64,7 +75,6 @@
   }
   
   .nav-tabs button:hover {
-    background-color: #fcdecd;
     transform: translateY(-1px);
   }
   
@@ -95,4 +105,7 @@
   ul {
     padding-left: 1.2rem;
   }
-  
+
+  .heart {
+  color: red;
+  }
