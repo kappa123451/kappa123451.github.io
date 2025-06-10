@@ -25,6 +25,16 @@
     margin-bottom: -20px;
   }
   
+  .image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 90%;
+    height: auto;
+  }
+
+
   .picture {
     display: block;
     margin: auto;
