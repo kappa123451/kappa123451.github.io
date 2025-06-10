@@ -6,6 +6,7 @@
   <title>Australia Tour - Kasper & Joanna</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<div id="top"></div>
 <body>
   <header >
     <div class="container">
@@ -14,10 +15,29 @@
     </div>
   </header>
 
+  <nav id="sidebar-melbourne" class="inline-nav" style="display: none;">
+    <a href="#top">⬆️ Top</a>
+    <a href="#day-Dec24">🎄 Dec 24</a>
+    <a href="#day-Dec25">🎅 Dec 25</a>
+    <a href="#day-Dec26">🐧 Dec 26</a>
+    <a href="#day-Dec27">🏞️ Dec 27</a>
+    <a href="#day-Dec28">🌊 Dec 28</a>
+    <a href="#references">🔗 References</a>
+    <a href="#bottom">⬇️ Bottom</a>
+  </nav>
+
+  <nav id="sidebar-sydney" class="inline-nav" style="display: none;">
+    <a href="#top">⬆️ Top</a>
+    <a href="#day-Dec27">🌊 Dec 28</a>
+    <a href="#references">🔗 References</a>
+    <a href="#bottom">⬇️ Bottom</a>
+  </nav>
+
+
   <nav class="container nav-tabs">
     <button onclick="goHome()">首頁</button>
-    <button onclick="showDay('Melbourne')">墨爾本行程</button>
-    <button onclick="showDay('Sydney')">雪梨行程</button>
+    <button  onclick="showDay('Melbourne')">墨爾本行程</button>
+    <button  onclick="showDay('Sydney')">雪梨行程</button>
   </nav>
 
 
@@ -25,32 +45,40 @@
 
   <main class="container" style="margin-top: -50px;">
     <section id="Melbourne" class="day-content">
-      <h2>🎄 December 24 - Arrival & Melbourne City</h2>
+      <h2 id="day-Dec24">🎄 December 24 - Arrival & Melbourne City</h2>
       <ul>
         <li>Flight: 台北 ✈︎ 墨爾本</li>
         <li>Luggage: 23kg x 2</li>
         <li>12:05 PM - Arrive at Melbourne T2</li>
         <li>Go to Airbnb, then city center for lunch (restaurant TBD)</li>
-        <li>5:00 PM - Go to Victoria State Library</li>
+        <li>5:00 PM - Visit different Melbourne spots</li>
         <p style="text-align: center; font-style: italic;">Victoria State Library</p>
         <img class="image" src="Pictures/Victoria state library.jpg">
-        <p style="text-align: center; font-style: italic;">Walk around Yarra River</p>
+        <p style="text-align: center; font-style: italic;">Melbourne Yarra River</p>
         <img class="image" src="Pictures/Yarra River.jpg">
-        <p style="text-align: center; font-style: italic;">Visit Melbourne Skydeck</p>
+        <p style="text-align: center; font-style: italic;">Melbourne Skydeck</p>
         <img class="image" src="Pictures/melbourne skydeck.jpg">
       </ul>
 
 
 
-      <h2>🎅 December 25 - Christmas City Day</h2>
+      <h2 id="day-Dec25">🎅 December 25 - Christmas City Day</h2>
       <ul>
-        <li>8:00 AM - Wake up, go to Degraves Pl (Coffee Lane Way)</li>
+        <li>8:00 AM - Wake up, go to Degraves Pl and get brekky.</li>
+        <p style="text-align: center; font-style: italic;">Coffee Lane Way</p>
+        <img class="image" src="Pictures/coffee.jpg">
         <li>Must try: Lune Croissanterie 🥐</li>
+        <p style="text-align: center; font-style: italic;">Lune Croissanterie</p>
+        <img class="image" src="Pictures/Lune.jpg">
         <li>10:00 AM - Visit St. Paul’s Cathedral (Stained Glass!)</li>
+        <p style="text-align: center; font-style: italic;">St. Paul’s Cathedral</p>
+        <img class="imagechurch" src="Pictures/Church.jpg">
         <li>11:00 AM - Bourke Street Mall shopping & lunch</li>
+        <li>1:00 PM - Melbourne University</li>
+        <li>1:00 PM - Melbourne Street Art</li>
       </ul>
 
-      <h2>🐧 December 26 - Penguins & Train</h2>
+      <h2 id="day-Dec26">🐧 December 26 - Penguins & Train</h2>
       <ul>
         <li>10:30 AM - Depart from Grand Hyatt Melbourne</li>
         <li>12:45 PM - Puffing Billy Steam Train ride</li>
@@ -66,10 +94,10 @@
 
     </section>
 
-
+    <div id="bottom"></div>
 
     <section id="Sydney" class="day-content">
-        <h2>🌊 December 28 - 12 Apostles & National Park</h2>
+        <h2 id="day-Dec27">🌊 December 28 - 12 Apostles & National Park</h2>
         <ul>
             <li>Dec 28 - Flight to Sydney</li>
             <li>Dec 29 to Jan 3 - Free days (details TBD)</li>
