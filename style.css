@@ -28,7 +28,20 @@
   .picture {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 90%; /* Default to large for mobile */
+    max-width: 600px; /* Limit size on large screens */
+  }
+
+  @media (min-width: 768px) {
+    .picture {
+      width: 60%; /* For tablets and up */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .picture {
+      width: 50%; /* For desktops */
+    }
   }
 
   header {
