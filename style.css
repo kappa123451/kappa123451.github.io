@@ -37,10 +37,6 @@
     text-align: left;
   }
   
-  header h1:hover{
-  transform: scale(1.03);
-  cursor: pointer;
-  }
 
   header h1 {
     margin: 0;
@@ -52,31 +48,36 @@
     color: var(--secondary);
   }
   
-  .nav-tabs {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  
-  .nav-tabs button {
-    font-size: 0.9rem;
-    padding: 0.8rem 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-    color: var(--primary);
-    border-radius: 25px;
-    border: 1px solid #ddd;
-    background-color: #fafafa;
-    text-align: center;
-    flex: 1;
-    max-width: 200px;
-  }
-  
-  .nav-tabs button:hover {
-    transform: translateY(-1px);
-  }
+.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-left: 1rem;
+  gap: 5px;
+}
+
+.nav-tabs button {
+  all: unset; /* Remove all default button styles */
+  cursor: pointer;
+  padding-left: 1rem;
+  position: relative;
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.nav-tabs button::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.nav-tabs button:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
   
   main h2 {
     margin-top: 0;
