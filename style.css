@@ -29,7 +29,7 @@
     display: block;
     margin: auto;
     width: 90%; /* Default to large for mobile */
-    max-width: 600px; /* Limit size on large screens */
+     /* Limit size on large screens */
   }
 
   @media (min-width: 768px) {
