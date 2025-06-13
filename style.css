@@ -27,12 +27,18 @@ body {
   padding: 2rem 1rem;
 }
 
-.imagechurch {
-  display: block;
-  margin: 10px auto;
-  max-width: 90%;
-  height: 500px;
+.image-container {
+  display: flex;
+  gap: 16px; /* optional: space between images */
 }
+
+.image-container img {
+  width: 100%;
+  max-width: 48%; /* or any size you want */
+  height: auto;
+  object-fit: cover;
+}
+
 
 .image {
   display: block;
